@@ -7,10 +7,6 @@ Constraints:
 0 <= s.length <= 105
 s consists of English letters, digits, symbols and spaces.
 '''
-def main():
-    s = "abcgdyawight"
-    output = longest_substring(s)
-    print(output)
 
 def longest_substring(s):
     seq = ""
@@ -27,4 +23,9 @@ def longest_substring(s):
         final_answer = seq
     return len(final_answer)
 
+def main():
+    s = "abcgdyawight"
+    output = longest_substring(s)
+    print(output)
+    
 main()
